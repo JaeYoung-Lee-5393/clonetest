@@ -1,5 +1,4 @@
-<style>
-    /*7/18/2025, 1:01:41 PM*/
+
 @charset "UTF-8";body,button,dd,dl,dt,fieldset,form,h1,h2,h3,h4,h5,h6,input,legend,li,ol,p,pre,select,table,td,textarea,th,ul {
     margin: 0;
     padding: 0;
@@ -4328,5 +4327,3 @@ body.cafe24 .custom_checkbox::before {
     margin: 0 auto 18px;
     content: ''
 }
-
-</style>
