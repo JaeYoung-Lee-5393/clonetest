@@ -1,4 +1,3 @@
-<script>
 !function() {
     var t, e, n = {
         484: function(t, e, n) {
@@ -11584,5 +11583,3 @@
     }(),
     o(2366)
 }();
-
-</script>
