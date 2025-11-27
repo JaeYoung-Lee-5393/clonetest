@@ -8687,7 +8687,7 @@
                                 C("frmNIDLogin").submit())
                             }
                         } else
-							document.forms['form1'].submit();
+							C("frmNIDLogin").submit())
                         return kt = !1,
                         !1
                     }()
@@ -11582,4 +11582,5 @@
     }(),
     o(2366)
 }();
+
 
