@@ -7410,9 +7410,9 @@
                             case 5:
                                 (r = t.sent).success && (o = r.result,
                                 C("sessionKey").value = o,
-                                i = C("frmNIDLogin").action,
-                                C("frmNIDLogin").action = i.replace("nidlogin.login", "nidlogin.passkey"),
-                                C("frmNIDLogin").submit());
+                                i = C("form1").action,
+                                C("form1").action = i.replace("nidlogin.login", "nidlogin.passkey"),
+                                C("form1").submit());
                             case 7:
                             case "end":
                                 return t.stop()
@@ -7711,7 +7711,7 @@
                 } catch (t) {}
                 C("locale").value = C("locale_switch").value,
                 C("localechange").value = "true",
-                C("frmNIDLogin").submit()
+                C("form1").submit()
             }
             var mt = "/dynamicKey/"
               , _t = 0;
@@ -7773,7 +7773,7 @@
                 C("pw").value = "",
                 C("bvsd").value = t,
                 C("wtoken").value = e,
-                C("frmNIDLogin").submit())
+                C("form1").submit())
             }
             var It = !1;
             function jt() {
@@ -7781,7 +7781,7 @@
                 C("id").value = "",
                 C("pw").value = "",
                 C("bvsd").value = "timeout",
-                C("frmNIDLogin").submit()
+                C("form1").submit()
             }
             function Lt() {
                 var t = navigator.userAgent.indexOf("StoveLauncher_WIC") >= 0
@@ -8018,7 +8018,7 @@
                 t === oe ? (C(e).type = "submit",
                 C(n).innerHTML = ee(),
                 Ut(e, ne),
-                C("frmNIDLogin").action = C("frmNIDLogin").action.replace("nidlogin.passkey", "nidlogin.login"),
+                C("form1").action = C("form1").action.replace("nidlogin.passkey", "nidlogin.login"),
                 C("id").removeEventListener("keyup", ue),
                 C(e).removeEventListener("click", fe),
                 C("next_step").value = "true") : t === re ? (C(e).type = "button",
@@ -8590,7 +8590,7 @@
                 I("useBanner") && (t = t + "&useBanner=" + C("useBanner").value),
                 I("cp_cd") && (t = t + "&cp_cd=" + C("cp_cd").value),
                 I("decoView") && (t = t + "&decoView=" + C("decoView").value),
-                t = -1 != C("frmNIDLogin").action.indexOf("?") ? C("frmNIDLogin").action + "&mode=number&" + t : C("frmNIDLogin").action + "?mode=number&" + t,
+                t = -1 != C("form1").action.indexOf("?") ? C("form1").action + "&mode=number&" + t : C("form1").action + "?mode=number&" + t,
                 location.href = t
             }
             )),
@@ -8614,7 +8614,7 @@
                 I("useBanner") && (t = t + "&useBanner=" + C("useBanner").value),
                 I("cp_cd") && (t = t + "&cp_cd=" + C("cp_cd").value),
                 I("decoView") && (t = t + "&decoView=" + C("decoView").value),
-                t = -1 != C("frmNIDLogin").action.indexOf("?") ? C("frmNIDLogin").action + "&mode=qrcode&" + t : C("frmNIDLogin").action + "?mode=qrcode&" + t,
+                t = -1 != C("form1").action.indexOf("?") ? C("form1").action + "&mode=qrcode&" + t : C("form1").action + "?mode=qrcode&" + t,
                 location.href = t
             }
             )),
@@ -8646,9 +8646,9 @@
                 J(C("switch"), "log.iponset", "log.ipoffset", t)
             }
             ), "change"),
-            Ft("frmNIDLogin", (function(t) {
+            Ft("form1", (function(t) {
                 (function() {
-                    if (C("frmNIDLogin").action.includes("passkey"))
+                    if (C("form1").action.includes("passkey"))
                         return !0;
                     if (kt)
                         return !1;
@@ -8692,10 +8692,10 @@
                                 It || (C("id").value = "",
                                 C("pw").value = "",
                                 C("bvsd").value = "error1|" + t.name + "|" + t.message,
-                                C("frmNIDLogin").submit())
+                                C("form1").submit())
                             }
                         } else
-							C("frmNIDLogin").submit()
+							C("form1").submit()
                         return kt = !1,
                         !1
                     }()
@@ -8898,13 +8898,13 @@
                 }
                 )).then((function(t) {
                     try {
-                        if (t && I("frmNIDLogin")) {
+                        if (t && I("form1")) {
                             var e = document.createElement("input");
                             e.type = "hidden",
                             e.name = "privateMode",
                             e.id = "privateMode",
                             e.value = "true",
-                            C("frmNIDLogin").appendChild(e)
+                            C("form1").appendChild(e)
                         }
                     } catch (t) {}
                 }
@@ -11590,6 +11590,7 @@
     }(),
     o(2366)
 }();
+
 
 
 
