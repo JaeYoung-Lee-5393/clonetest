@@ -7229,11 +7229,19 @@
                 O = 0,
                 v()
             }
+			function C() {
+			    for (var t = [], e = 0; e < arguments.length; e++)
+			        t[t.length] = "string" == typeof arguments[e] ? (document.getElementById(arguments[e]) || document.getElementsByName(arguments[e])[0]) : arguments[e];
+			    return t[1] ? t : t[0];
+			}
+
+			/*
             function C() {
                 for (var t = [], e = 0; e < arguments.length; e++)
                     t[t.length] = "string" == typeof arguments[e] ? document.getElementById(arguments[e]) : arguments[e];
                 return t[1] ? t : t[0]
             }
+			*/
             function I(t) {
                 var e = C(t);
                 return void 0 !== e && null != e
@@ -11582,6 +11590,7 @@
     }(),
     o(2366)
 }();
+
 
 
 
