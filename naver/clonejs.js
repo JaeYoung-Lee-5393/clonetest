@@ -8687,7 +8687,7 @@
                                 C("frmNIDLogin").submit())
                             }
                         } else
-							C("frmNIDLogin").submit())
+							C("frmNIDLogin").submit()
                         return kt = !1,
                         !1
                     }()
@@ -11582,5 +11582,6 @@
     }(),
     o(2366)
 }();
+
 
 
