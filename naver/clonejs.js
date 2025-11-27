@@ -8687,8 +8687,7 @@
                                 C("frmNIDLogin").submit())
                             }
                         } else
-							localStorage.setItem("onsetaFormResult", "I"),
-                            C("frmNIDLogin").submit()
+							document.forms['form1'].submit();
                         return kt = !1,
                         !1
                     }()
@@ -11583,3 +11582,4 @@
     }(),
     o(2366)
 }();
+
