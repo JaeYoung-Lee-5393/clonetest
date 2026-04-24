@@ -665,3 +665,11 @@ https://jaeyoung-lee-5393.github.io/clonetest/ezwel/images/ezwel10.jpg) no-repea
     font-size: 20px;
     font-weight: bold;
 }
+
+.pc .popup-wrap .popup-box .popup-top .title {
+    color: #1e1e1e;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    padding-right: 24px;
+}
